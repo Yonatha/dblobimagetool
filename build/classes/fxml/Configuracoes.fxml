@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="761.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConfiguracoesController">
+    
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Pane layoutX="2.0" layoutY="4.0" prefHeight="757.0" prefWidth="232.0" style="-fx-background-color: #F7F8FA;" styleClass="leftPanel" stylesheets="@../resources/css/main.css">
+         <children>
+            <ImageView fitHeight="92.0" fitWidth="232.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/img/logo1.png" />
+               </image>
+            </ImageView>
+            <Text fill="#579fce" layoutX="12.0" layoutY="723.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Você pode adicionar uma marca d'água em suas imagens&quot;" wrappingWidth="208.0029296875" />
+            <Text fill="#579fce" layoutX="12.0" layoutY="703.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dica:" wrappingWidth="208.0029296875" />
+            <Button fx:id="button111" layoutX="22.0" layoutY="105.0" onAction="#actionSobre" prefHeight="25.0" prefWidth="189.0" text="Sobre" />
+            <Button fx:id="btnSair" layoutX="22.0" layoutY="145.0" onAction="#actionSair" prefHeight="25.0" prefWidth="189.0" text="Sair" />
+            <Button fx:id="btnInserir" layoutX="22.0" layoutY="207.0" onAction="#actionInserir" prefHeight="25.0" prefWidth="189.0" text="Inserir" />
+         </children>
+      </Pane>
+      <Text fill="#579fce" layoutX="257.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Configurações">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Line endX="420.0" layoutX="358.0" layoutY="66.0" smooth="false" startX="-100.0" stroke="#d2961f" />
+      <ImageView fitHeight="65.0" fitWidth="61.0" layoutX="706.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/img/icon-config.png" />
+         </image>
+      </ImageView>
+      <Text fill="#579fce" layoutX="321.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Origem">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="56.0" fitWidth="55.0" layoutX="255.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/img/icon-origin.png" />
+         </image>
+      </ImageView>
+      <Text fill="#579fce" layoutX="329.0" layoutY="559.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salvar em disco">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="56.0" fitWidth="55.0" layoutX="258.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/img/icon-image.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="field_origin_db_host" layoutX="316.0" layoutY="137.0" prefHeight="25.0" prefWidth="189.0" text="localhost" />
+      <Label layoutX="258.0" layoutY="141.0" text="Servidor" />
+      <TextField fx:id="field_origin_host_port" layoutX="651.0" layoutY="180.0" prefHeight="25.0" prefWidth="104.0" text="3306" />
+      <Label layoutX="609.0" layoutY="184.0" text="Porta" />
+      <TextField fx:id="field_origin_db_name" layoutX="353.0" layoutY="180.0" prefHeight="25.0" prefWidth="242.0" text="dblobimagetool" />
+      <Label layoutX="257.0" layoutY="184.0" text="Banco de dados" />
+      <TextField fx:id="field_origin_db_user" layoutX="353.0" layoutY="219.0" prefHeight="25.0" prefWidth="189.0" text="yonatha" />
+      <Label layoutX="257.0" layoutY="223.0" text="Usuário" />
+      <Label layoutX="258.0" layoutY="261.0" text="Senha" />
+      <TextField fx:id="field_origin_db_table" layoutX="606.0" layoutY="219.0" prefHeight="25.0" prefWidth="149.0" text="fotos" />
+      <Label layoutX="554.0" layoutY="223.0" text="Tabela" />
+      <TextField fx:id="field_origin_db_table_blob_field" layoutX="641.0" layoutY="258.0" prefHeight="25.0" prefWidth="114.0" text="imagem" />
+      <Label layoutX="556.0" layoutY="262.0" text="Coluna Blob" />
+      <TextField fx:id="field_save_disk_patch" layoutX="361.0" layoutY="596.0" prefHeight="25.0" prefWidth="392.0" text="E:\FOTOS_ALUNOS\" />
+      <Label layoutX="259.0" layoutY="600.0" text="Caminho Destino" />
+      <TextField fx:id="field_image_height" layoutX="344.0" layoutY="638.0" prefHeight="25.0" prefWidth="104.0" text="480" />
+      <Label layoutX="259.0" layoutY="642.0" text="Altura" />
+      <TextField fx:id="field_image_quality" layoutX="532.0" layoutY="638.0" prefHeight="25.0" prefWidth="104.0" text="0.8" />
+      <Label layoutX="461.0" layoutY="642.0" text="Qualidade" />
+      <TextField fx:id="field_image_width" layoutX="343.0" layoutY="677.0" prefHeight="25.0" prefWidth="104.0" text="640" />
+      <Label layoutX="258.0" layoutY="681.0" text="Comprimento" />
+      <TextField fx:id="field_image_extension" layoutX="531.0" layoutY="677.0" prefHeight="25.0" prefWidth="104.0" text="jpg" />
+      <Label layoutX="460.0" layoutY="681.0" text="Formato" />
+      <PasswordField fx:id="field_origin_db_password" layoutX="353.0" layoutY="257.0" prefHeight="25.0" prefWidth="189.0" text="string01569613" />
+      <Accordion layoutX="371.0" layoutY="704.0" />
+      <Button fx:id="btnStartProcess" layoutX="568.0" layoutY="718.0" onAction="#actionStart" prefHeight="19.0" prefWidth="189.0" text="Iniciar" />
+      <Text fill="#579fce" layoutX="320.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destino">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="253.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/img/icon-target.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="field_target_db_host" layoutX="315.0" layoutY="361.0" prefHeight="25.0" prefWidth="189.0" text="localhost" />
+      <Label layoutX="257.0" layoutY="365.0" text="Servidor" />
+      <TextField fx:id="field_target_host_port" layoutX="647.0" layoutY="401.0" prefHeight="25.0" prefWidth="104.0" text="3306" />
+      <Label layoutX="603.0" layoutY="405.0" text="Porta" />
+      <TextField fx:id="field_target_db_name" layoutX="353.0" layoutY="404.0" prefHeight="25.0" prefWidth="232.0" text="dblobimagetool_target" />
+      <Label layoutX="257.0" layoutY="408.0" text="Banco de dados" />
+      <TextField fx:id="field_target_db_user" layoutX="353.0" layoutY="443.0" prefHeight="25.0" prefWidth="189.0" text="yonatha" />
+      <Label layoutX="257.0" layoutY="447.0" text="Usuário" />
+      <Label layoutX="258.0" layoutY="485.0" text="Senha" />
+      <TextField fx:id="field_target_db_table" layoutX="602.0" layoutY="441.0" prefHeight="25.0" prefWidth="149.0" text="fotos" />
+      <Label layoutX="558.0" layoutY="445.0" text="Tabela" />
+      <TextField fx:id="field_target_db_table_blob_fild" layoutX="637.0" layoutY="480.0" prefHeight="25.0" prefWidth="114.0" text="imagem" />
+      <Label layoutX="558.0" layoutY="484.0" text="Coluna Blob" />
+      <PasswordField fx:id="field_target_db_password" layoutX="353.0" layoutY="481.0" prefHeight="25.0" prefWidth="189.0" text="string01569613" />
+      <CheckBox fx:id="check_box_save_disk" layoutX="647.0" layoutY="554.0" mnemonicParsing="false" text="Salvar em disco" />
+      <CheckBox fx:id="check_box_use_origin" layoutX="530.0" layoutY="321.0" mnemonicParsing="false" text="Usar a tabela de origem" />
+      <Button fx:id="btnConnectionOriginTest" layoutX="694.0" layoutY="96.0" onAction="#actionConnectionOriginTest" prefHeight="25.0" prefWidth="61.0" text="Testar" />
+      <ComboBox fx:id="field_origin_db_driver" layoutX="557.0" layoutY="138.0" prefHeight="25.0" prefWidth="197.0" promptText="Selecione o driver..." />
+      <Label layoutX="514.0" layoutY="141.0" text="Driver" />
+      <ComboBox fx:id="field_target_db_driver" layoutX="555.0" layoutY="361.0" prefHeight="25.0" prefWidth="197.0" promptText="Selecione o driver..." />
+      <Label layoutX="512.0" layoutY="364.0" text="Driver" />
+      <Button fx:id="btnConnectionTargetTest" layoutX="694.0" layoutY="318.0" onAction="#actionConnectionTargetTest" prefHeight="25.0" prefWidth="61.0" text="Testar" />
+      
+    </children>
+</AnchorPane>

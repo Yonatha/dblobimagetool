@@ -1,0 +1,32 @@
+
+DBlobImage Tool
+Software que permite a otimização de imagens armazenadas de forma binária no MySQL ou SQL Server. Com o DBlobImage Tool, o usuário poderá reduzir o tamanho de armazenamento das imagens contidos em sua base através da parametrização de dimenção e qualidade da imagem.
+
+REQUISITOS FUNCIONAIS
+	RF001 Permitir a conexão com MySQL para a fonte de origem [EM ANDAMENTO]
+	RF002 Permitir a conexão com SQL Server para a fonte de origem [FEITO]
+	RF003 Permitir que o usuário informe a tabela e o campo que será extraído [FEITO]
+	RF004 Testar a conexão de origem [FEITO]
+	RF005 Extrair as imagens do formato blob do banco e salvar em disco [FEITO]
+	RF006 Redimencionar imagem [FEITO]
+	RF007 Definir a qualidade da imagem [FEITO]
+	RF008 Definir a extensão da imagem após a extração do banco [FEITO]
+	RF009 Permitir a conexão com MySQL para a fonte de destinatária
+	RF010 Permitir a conexão com SQL Server para a fonte de destinatária
+	RF011 Salvar o blob "otimizado" no banco de destino
+	RF011 Permitir que o blob "otimizado" seja salvo na fonte de origem
+	RF012 Permitir que o usuário coloque marca d'água nas imagens
+	RF013 Permitir a conexão com PostgreSQL para a fonte de origem
+	RF014 Permitir a conexão com MongoDB para a fonte de origem
+	RF015 Permitir a conexão com Oracle para a fonte de origem
+	RF016 Permitir a conexão com PostgreSQL para a fonte de destinatária
+	RF017 Permitir a conexão com MongoDB para a fonte de destinatária
+	RF018 Permitir a conexão com Oracle para a fonte de destinatária
+
+REQUISITOS NÃO FUNCIONAIS
+	RNF001 O sistema deve permitir que o usuário seleciona a fonte de dado de origem [EM ANDAMENTO]
+	RNF002 O sistema deve permitir que o usuário seleciona a fonte de dado de destino
+	RNF003 O sistema deve permitir que o usuário salve as imagens em disco e que possa definir sua extensão sendo ela JPG, PNG ou BMP
+	RNF004 O sistema deve permitir que o usuário defina a altra e largura da imagem
+	RNF005 O sistema deve permitir que o usuário configure a qualidade das imagens extraída
+	RNF006 Todas as operações do sistema devem ser realizadas em no máximo 3 cliques
