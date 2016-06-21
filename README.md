@@ -10,3 +10,6 @@ Suporte Atual: MySQL, SQL Server
 
 Versões futuras: 
 Suporte ao Oracle, PostgreSQL, 
+
+
+OBS: Esse é um projeto experimenal, sendo minha primeira experiência com FX, você poderá achar uma macarronada, mas enfim, esta ai.
